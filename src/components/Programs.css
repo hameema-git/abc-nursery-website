@@ -1,0 +1,244 @@
+.programs{
+
+    background:#ffdfe4;
+
+    padding:90px 20px;
+
+    border-radius:40px 40px 0 0;
+
+    font-family:'Poppins', sans-serif;
+}
+
+/* CONTAINER */
+
+.programs-container{
+
+    max-width:950px;
+
+    margin:auto;
+
+    text-align:center;
+}
+
+/* TITLE */
+
+.programs-title{
+
+    font-family:'Baloo 2', cursive;
+
+    font-size:52px;
+
+    color:#ff4d6d;
+
+    line-height:1.2;
+
+    margin-bottom:15px;
+
+    position:relative;
+
+    display:inline-block;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+}
+
+.programs-title::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:100%;
+    height:6px;
+
+    background:#79d84b;
+
+    border-radius:20px;
+}
+
+/* SUBTITLE */
+
+.programs-subtitle{
+
+    margin-top:20px;
+
+    color:#555;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    margin-bottom:60px;
+
+    font-family:'Poppins', sans-serif;
+}
+
+/* CARD */
+
+.program-card{
+
+    background:white;
+
+    border-radius:35px;
+
+    padding:38px 42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+    margin-bottom:35px;
+
+    transition:.4s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.program-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
+
+.program-image img{
+
+    width:170px;
+    height:170px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid #79d84b;
+
+    box-shadow:0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* CONTENT */
+
+.program-content{
+
+    flex:1;
+
+    text-align:center;
+}
+
+.program-content h3{
+
+    font-size:44px;
+
+    color:#111;
+
+    margin-bottom:8px;
+
+    font-weight:700;
+
+    font-family:'Poppins', sans-serif;
+}
+
+.program-content h4{
+
+    font-size:32px;
+
+    color:#888;
+
+    margin-bottom:22px;
+
+    font-weight:600;
+
+    font-family:'Poppins', sans-serif;
+}
+
+.program-content p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#555;
+
+    max-width:520px;
+
+    margin:auto;
+
+    font-family:'Poppins', sans-serif;
+}
+
+/* REVERSE CARD */
+
+.reverse{
+
+    flex-direction:row-reverse;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .programs{
+
+        padding:70px 20px;
+    }
+
+    .programs-title{
+
+        font-size:38px;
+    }
+
+    .programs-subtitle{
+
+        font-size:16px;
+
+        line-height:1.8;
+
+        margin-bottom:45px;
+    }
+
+    .program-card,
+    .reverse{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding:30px 24px;
+
+        border-radius:28px;
+    }
+
+    .program-image img{
+
+        width:130px;
+        height:130px;
+    }
+
+    .program-content h3{
+
+        font-size:30px;
+    }
+
+    .program-content h4{
+
+        font-size:24px;
+
+        margin-bottom:16px;
+    }
+
+    .program-content p{
+
+        font-size:16px;
+
+        line-height:1.8;
+    }
+}

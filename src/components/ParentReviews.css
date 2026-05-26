@@ -1,0 +1,360 @@
+.reviews{
+
+    background:#f7f9f8;
+
+    padding:90px 20px;
+
+    text-align:center;
+
+    overflow:hidden;
+}
+
+/* CONTAINER */
+
+.reviews-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    overflow:hidden;
+}
+
+/* TITLE */
+
+.reviews-title{
+
+    font-family:'Baloo 2', cursive;
+
+    font-size:52px;
+
+    color:#ff2d55;
+
+    margin-bottom:18px;
+
+    position:relative;
+
+    display:inline-block;
+}
+
+.reviews-title::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:100%;
+    height:5px;
+
+    background:#79d84b;
+
+    border-radius:20px;
+}
+
+/* SUBTITLE */
+
+.reviews-subtitle{
+
+    font-size:18px;
+
+    color:#444;
+
+    line-height:1.8;
+
+    max-width:650px;
+
+    margin:0 auto 55px;
+}
+
+/* SLIDER */
+
+.reviews-slider{
+
+    display:flex;
+
+    gap:25px;
+
+    overflow-x:auto;
+
+    overflow-y:hidden;
+
+    scroll-behavior:smooth;
+
+    padding-bottom:15px;
+
+    scroll-snap-type:x mandatory;
+
+    scrollbar-width:none;
+
+    align-items:stretch;
+}
+
+.reviews-slider::-webkit-scrollbar{
+
+    display:none;
+}
+
+/* CARD */
+
+.review-card{
+
+    width:calc(50% - 13px);
+
+    min-width:calc(50% - 13px);
+
+    max-width:calc(50% - 13px);
+
+    box-sizing:border-box;
+
+    background:#d8f6dc;
+
+    border-radius:18px;
+
+    padding:30px 25px;
+
+    text-align:left;
+
+    position:relative;
+
+    flex-shrink:0;
+
+    scroll-snap-align:start;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    min-height:220px;
+
+    transition:.3s;
+
+    overflow:hidden;
+}
+
+.review-card:hover{
+
+    transform:translateY(-5px);
+}
+
+/* TEXT */
+
+.review-text{
+
+    font-size:16px;
+
+    line-height:1.9;
+
+    color:#333;
+
+    margin-bottom:35px;
+}
+
+/* BOTTOM */
+
+.review-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-end;
+
+    gap:10px;
+}
+
+/* USER */
+
+.review-user{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    min-width:0;
+}
+
+/* AVATAR */
+
+.review-avatar{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:white;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+}
+
+/* IMAGE */
+
+.review-avatar img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+}
+
+/* EMOJI */
+
+.review-avatar span{
+
+    font-size:24px;
+}
+
+/* NAME */
+
+.review-user h4{
+
+    font-size:18px;
+
+    margin-bottom:4px;
+
+    color:#111;
+}
+
+.review-user span{
+
+    font-size:13px;
+
+    color:#666;
+}
+
+/* QUOTE */
+
+.quote{
+
+    font-size:72px;
+
+    line-height:1;
+
+    color:white;
+
+    opacity:.9;
+
+    flex-shrink:0;
+}
+
+/* DOTS */
+
+.review-dots{
+
+    margin-top:35px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+}
+
+.review-dots span{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#d9d9d9;
+}
+
+.review-dots .active{
+
+    background:#ff9ea8;
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+
+    .review-card{
+
+        width:80%;
+
+        min-width:80%;
+
+        max-width:80%;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .reviews{
+
+        padding:70px 18px;
+    }
+
+    .reviews-title{
+
+        font-size:38px;
+    }
+
+    .reviews-subtitle{
+
+        font-size:16px;
+
+        margin-bottom:40px;
+    }
+
+    .reviews-slider{
+
+        gap:18px;
+    }
+
+    .review-card{
+
+        width:100%;
+
+        min-width:100%;
+
+        max-width:100%;
+
+        padding:24px 20px;
+
+        min-height:auto;
+    }
+
+    .review-text{
+
+        font-size:15px;
+
+        line-height:1.8;
+    }
+
+    .review-user h4{
+
+        font-size:16px;
+    }
+
+    .review-user span{
+
+        font-size:12px;
+    }
+
+    .quote{
+
+        font-size:55px;
+    }
+}

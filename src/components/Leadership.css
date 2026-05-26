@@ -1,0 +1,151 @@
+.leadership{
+
+    background:#f4f8f7;
+
+    padding:90px 20px;
+
+    text-align:center;
+}
+
+/* CONTAINER */
+
+.leadership-container{
+
+    max-width:900px;
+
+    margin:auto;
+}
+
+/* TITLE */
+
+.leadership-title{
+
+    font-family:'Baloo 2', cursive;
+
+    font-size:52px;
+
+    color:#ff2d55;
+
+    margin-bottom:70px;
+
+    position:relative;
+
+    display:inline-block;
+}
+
+.leadership-title::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:100%;
+    height:4px;
+
+    background:#79d84b;
+
+    border-radius:20px;
+}
+
+/* GRID */
+
+.leadership-grid{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:80px;
+
+    flex-wrap:wrap;
+}
+
+/* CARD */
+
+.leader-card{
+
+    text-align:center;
+}
+
+/* IMAGE */
+
+.leader-card img{
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:2px solid #777;
+
+    margin-bottom:22px;
+}
+
+/* NAME */
+
+.leader-card h3{
+
+    font-size:30px;
+
+    color:#222;
+
+    margin-bottom:8px;
+
+    font-weight:700;
+}
+
+/* ROLE */
+
+.leader-card p{
+
+    font-size:18px;
+
+    color:#555;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .leadership{
+
+        padding:70px 20px;
+    }
+
+    .leadership-title{
+
+        font-size:34px;
+
+        margin-bottom:50px;
+    }
+
+    .leadership-grid{
+
+        gap:45px;
+    }
+
+    .leader-card img{
+
+        width:150px;
+
+        height:150px;
+    }
+
+    .leader-card h3{
+
+        font-size:24px;
+    }
+
+    .leader-card p{
+
+        font-size:16px;
+    }
+}

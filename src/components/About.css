@@ -1,0 +1,403 @@
+.about{
+
+    background:#f7f9f8;
+
+    padding:80px 20px 120px;
+
+    position:relative;
+
+    text-align:center;
+
+    font-family:'Poppins', sans-serif;
+}
+
+/* CONTAINER */
+
+.about-container{
+
+    max-width:950px;
+
+    margin:auto;
+
+    position:relative;
+}
+
+/* TITLE */
+
+.about-title{
+
+    font-family:'Baloo 2', cursive;
+
+    font-size:58px;
+
+    color:#ff4d6d;
+
+    margin-bottom:30px;
+
+    position:relative;
+
+    display:inline-block;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+}
+
+.about-title::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:100%;
+    height:6px;
+
+    background:#79d84b;
+
+    border-radius:20px;
+}
+
+/* HEADING */
+
+.about-heading{
+
+    font-size:42px;
+
+    line-height:1.5;
+
+    color:#111;
+
+    margin-bottom:35px;
+
+    font-weight:700;
+
+    font-family:'Poppins', sans-serif;
+}
+
+/* TEXT */
+
+.about-text{
+
+    font-size:22px;
+
+    line-height:2;
+
+    color:#555;
+
+    text-align:center;
+
+    font-family:'Poppins', sans-serif;
+
+    font-weight:400;
+}
+
+/* STARS */
+
+/* .stars{
+
+    position:absolute;
+
+    right:40px;
+
+    bottom:40px;
+
+    width:100px;
+
+    animation:twinkle 2s ease-in-out infinite;
+} */
+
+/* .stars{
+
+    position:absolute;
+
+    top:450px;
+
+    right:-20px;
+
+    width:90px;
+
+    z-index:10;
+
+    animation:twinkle 2s ease-in-out infinite;
+} */
+
+.stars{
+
+    position:absolute;
+
+    right:40px;
+
+    top:30%;
+
+    transform:translateY(-50%);
+
+    width:90px;
+
+    z-index:10;
+
+    animation:twinkle 2s ease-in-out infinite;
+
+    pointer-events:none;
+}
+
+/* FOCUS TITLE */
+
+.focus-title{
+
+    font-family:'Baloo 2', cursive;
+
+    font-size:54px;
+
+    color:#ff4d6d;
+
+    margin-top:100px;
+
+    position:relative;
+
+    display:inline-block;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+}
+
+.focus-title::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:100%;
+    height:6px;
+
+    background:#79d84b;
+
+    border-radius:20px;
+}
+
+/* ANIMATION */
+
+@keyframes twinkle{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.1);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+/* FOCUS GRID */
+
+.focus-grid{
+
+    margin-top:60px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+}
+
+/* CARD */
+
+.focus-card{
+
+    position:relative;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    height:420px;
+
+    transition:.4s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.focus-card img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.5s;
+}
+
+/* DARK OVERLAY */
+
+.focus-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,0.28);
+
+    z-index:1;
+
+    transition:.4s;
+}
+
+/* TEXT OVERLAY */
+
+.focus-overlay{
+
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    text-align:center;
+
+    z-index:2;
+
+    color:white;
+
+    width:82%;
+}
+
+.focus-overlay h3{
+
+    font-size:28px;
+
+    margin-bottom:14px;
+
+    font-weight:700;
+
+    font-family:'Poppins', sans-serif;
+}
+
+.focus-overlay p{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    font-family:'Poppins', sans-serif;
+
+    font-weight:400;
+}
+
+/* HOVER */
+
+.focus-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,0.15);
+}
+
+.focus-card:hover img{
+
+    transform:scale(1.08);
+}
+
+.focus-card:hover::before{
+
+    background:rgba(0,0,0,0.42);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .about{
+
+        padding:60px 20px 90px;
+    }
+
+    .about-title,
+    .focus-title{
+
+        font-size:40px;
+    }
+
+    .about-heading{
+
+        font-size:26px;
+
+        line-height:1.5;
+    }
+
+    .about-text{
+
+        font-size:16px;
+
+        line-height:1.9;
+    }
+
+    /* .stars{
+
+        width:65px;
+
+        right:10px;
+
+        bottom:10px;
+    } */
+
+    .stars{
+
+    width:80px;
+
+    right:5px;
+
+    top:25%;
+}
+/* .stars1{
+
+    width:60px;
+
+    right:6px;
+
+    top:15%;
+}  */
+
+
+    .focus-grid{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+    }
+
+    .focus-card{
+
+        height:320px;
+    }
+
+    .focus-overlay h3{
+
+        font-size:22px;
+    }
+
+    .focus-overlay p{
+
+        font-size:14px;
+
+        line-height:1.7;
+    }
+}
+

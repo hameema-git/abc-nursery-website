@@ -1,0 +1,306 @@
+.navbar{
+
+    width:100%;
+
+    height:140px;
+
+    background:white;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:1000;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+
+    /* overflow:hidden; */
+    overflow:visible;
+}
+
+/* SECTION OFFSET */
+
+#home,
+#about,
+#programs,
+#gallery,
+#contact{
+
+    scroll-margin-top:100px;
+}
+
+/* BUBBLE BACKGROUND */
+
+/* .navbar-bubbles{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    opacity:.18;
+
+    z-index:1;
+
+    pointer-events:none;
+} */
+
+.navbar-bubbles{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    z-index:1;
+
+    opacity:.55;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    transform:scale(1.2);
+}
+.navbar-bubbles svg{
+
+    width:100% !important;
+
+    height:100% !important;
+}
+
+/* ANIMATED CHARACTER */
+
+.navbar-character{
+
+    position:absolute;
+
+    left:25px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:150px;
+
+    height:150px;
+
+    z-index:10;
+}
+
+/* LOGO */
+
+.logo{
+
+    position:absolute;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%, -50%);
+
+    z-index:10;
+}
+
+.logo img{
+
+    width:155px;
+
+    height:auto;
+
+    object-fit:contain;
+
+    display:block;
+}
+
+/* MENU ICON */
+
+.menu{
+
+    position:absolute;
+
+    right:30px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    font-size:40px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    color:#111;
+
+    z-index:20;
+
+    transition:.3s;
+}
+
+.menu:hover{
+
+    color:#ff4d6d;
+}
+
+/* MOBILE MENU */
+
+.mobile-menu{
+
+    position:absolute;
+
+    top:100px;
+
+    right:-100%;
+
+    width:240px;
+
+    background:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:25px;
+
+    gap:22px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+    transition:.4s ease;
+
+    border-radius:0 0 0 20px;
+
+    z-index:100;
+}
+
+.mobile-menu.active{
+
+    right:0;
+}
+
+.mobile-menu a{
+
+    text-decoration:none;
+
+    color:#111;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.mobile-menu a:hover{
+
+    color:#ff4d6d;
+}
+
+/* TABLET */
+
+@media(max-width:992px){
+
+    .logo img{
+
+        width:135px;
+    }
+
+    .navbar-character{
+
+        width:80px;
+
+        height:80px;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        height:105px;
+    }
+
+    #home,
+    #about,
+    #programs,
+    #gallery,
+    #contact{
+
+        scroll-margin-top:76px;
+    }
+
+    .logo img{
+
+        width:110px;
+    }
+
+    .navbar-character{
+
+        width:60px;
+
+        height:60px;
+
+        left:8px;
+    }
+
+    .menu{
+
+        font-size:32px;
+
+        right:18px;
+    }
+
+    .mobile-menu{
+
+        top:76px;
+
+        width:210px;
+
+        padding:22px 20px;
+    }
+
+    .mobile-menu a{
+
+        font-size:16px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media(max-width:480px){
+
+    .logo img{
+
+        width:95px;
+    }
+
+    .navbar-character{
+
+        width:72px;
+
+        height:72px;
+    }
+
+    .menu{
+
+        font-size:28px;
+    }
+}
