@@ -216,7 +216,7 @@ function Hero() {
 
                     src={heroImage}
 
-                    alt="ABC Nursery"
+                    alt="Kids learning at ABC Nursery Abu Dhabi"
 
                     animate={{
                         y:[0,-18,0]

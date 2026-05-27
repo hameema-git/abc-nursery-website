@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://abc-nursery.ae/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://abc-nursery.ae/about</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://abc-nursery.ae/contact</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://abc-nursery.ae/gallery</loc>
+    <priority>0.80</priority>
+  </url>
+
+</urlset>
