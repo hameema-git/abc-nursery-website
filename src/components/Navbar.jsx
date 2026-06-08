@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 import logo from "../assets/images/abc logo.png";
 
@@ -156,6 +157,13 @@ function Navbar() {
                     >
                         Contact
                     </a>
+                        <Link
+        to="/blog"
+        onClick={() => setShowMenu(false)}
+        className="blog-link"
+    >
+        Blogs
+    </Link>
 
                 </div>
 

@@ -304,3 +304,15 @@
         font-size:28px;
     }
 }
+
+.mobile-menu .blog-link{
+    text-decoration:none;
+    color:#111;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.mobile-menu .blog-link:hover{
+    color:#ff4d6d;
+}

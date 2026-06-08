@@ -1,24 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
     <loc>https://abc-nursery.ae/</loc>
-    <priority>1.00</priority>
+    <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://abc-nursery.ae/about</loc>
-    <priority>0.80</priority>
+    <loc>https://abc-nursery.ae/blog</loc>
+    <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://abc-nursery.ae/contact</loc>
-    <priority>0.80</priority>
+    <loc>https://abc-nursery.ae/blog/creative-activities-for-preschoolers</loc>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://abc-nursery.ae/gallery</loc>
-    <priority>0.80</priority>
+    <loc>https://abc-nursery.ae/blog/creative-play-ideas-for-children</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://abc-nursery.ae/blog/building-confidence-in-young-children</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://abc-nursery.ae/blog/the-power-of-learning-through-play</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://abc-nursery.ae/blog/preparing-your-child-for-preschool</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://abc-nursery.ae/blog/boosting-early-language-skills</loc>
+    <priority>0.8</priority>
   </url>
 
 </urlset>

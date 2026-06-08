@@ -1,73 +1,43 @@
-import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Programs from "./components/Programs";
-import WhyChoose from "./components/WhyChoose"
-import Contact from "./components/Contact";
-import Leadership from "./components/Leadership"
-import ParentReview from "./components/ParentReviews"
-import FAQ from "./components/FAQ"
-import Gallery from "./components/Gallery";
-// import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
+import NotFound from "./pages/NotFound";
 
-import { ParallaxProvider } from "react-scroll-parallax";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
+  return (
+    <BrowserRouter>
 
-    return (
+      <ScrollToTop />
 
-        <ParallaxProvider>
+      <Routes>
 
-            <Navbar />
+        <Route
+          path="/"
+          element={<Home />}
+        />
 
-            <Hero />
+        <Route
+          path="/blog"
+          element={<Blog />}
+        />
 
-            <About />
+        <Route
+          path="/blog/:slug"
+          element={<BlogPost />}
+        />
+  <Route
+    path="*"
+    element={<NotFound />}
+  />
 
-            <Programs />
-            <WhyChoose/>
-            <Contact/>
-            <Leadership/>
-            <ParentReview/>
-            <FAQ/>
+      </Routes>
 
-            <Gallery />
-            {/* <Contact/> */}
-
-            <Footer />
-
-
-            {/* WHATSAPP BUTTON */}
-
-            <a
-                href="https://wa.me/9710506227041"
-                className="whatsapp-float"
-                target="_blank"
-            >
-
-                <i className="fab fa-whatsapp"></i>
-
-            </a>
-
-            {/* CALL BUTTON */}
-
-            <a
-                href="tel:+9710506227041"
-                className="call-float"
-            >
-
-                <i className="fas fa-phone-alt"></i>
-
-            </a>
-            
-
-        </ParallaxProvider>
-
-    );
+    </BrowserRouter>
+  );
 }
 
 export default App;
-
