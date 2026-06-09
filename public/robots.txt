@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://abc-nursery.ae/sitemap.xml
+Sitemap: https://www.abc-nursery.ae/sitemap.xml

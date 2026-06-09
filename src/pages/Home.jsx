@@ -37,7 +37,7 @@ function Home() {
 
         <link
           rel="canonical"
-          href="https://abc-nursery.ae/"
+          href="https://www.abc-nursery.ae/"
         />
 
         <meta

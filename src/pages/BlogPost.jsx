@@ -79,7 +79,9 @@ function BlogPost() {
 
         <link
           rel="canonical"
-          href={`https://abc-nursery.ae/blog/${blog.slug}`}
+         
+
+          href={`https://www.abc-nursery.ae/blog/${blog.slug}`}
         />
 
         {/* Open Graph SEO */}
@@ -101,7 +103,7 @@ function BlogPost() {
 
         <meta
           property="og:url"
-          content={`https://abc-nursery.ae/blog/${blog.slug}`}
+          content={`www.abc-nursery.ae/blog/${blog.slug}`}
         />
 
         <meta

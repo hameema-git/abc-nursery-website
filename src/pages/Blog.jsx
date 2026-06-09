@@ -22,7 +22,7 @@ function Blog() {
 
         <link
           rel="canonical"
-          href="https://abc-nursery.ae/blog"
+          href="https://www.abc-nursery.ae/"
         />
 
         {/* Open Graph SEO */}
@@ -44,7 +44,7 @@ function Blog() {
 
         <meta
           property="og:url"
-          content="https://abc-nursery.ae/blog"
+          content="https://www.abc-nursery.ae/"
         />
 
         <meta
