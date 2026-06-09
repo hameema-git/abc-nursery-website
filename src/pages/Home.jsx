@@ -42,17 +42,17 @@ function Home() {
 
         <meta
           property="og:title"
-          content="ABC Nursery Abu Dhabi | Preschool & Early Learning"
+          content="ABC Nursery Abu Dhabi | Preschool, Daycare & Early Learning Since 1979"
         />
 
         <meta
           property="og:description"
-          content="Quality preschool, daycare and early learning programs in Abu Dhabi since 1979."
+          content="ABC Nursery Abu Dhabi offers preschool, daycare, kindergarten preparation and early childhood education programs. Trusted by families since 1979."
         />
 
         <meta
           property="og:url"
-          content="https://abc-nursery.ae/"
+          content="https://www.abc-nursery.ae/"
         />
 
         <meta
