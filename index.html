@@ -23,6 +23,10 @@
     name="author"
     content="ABC Nursery"
   />
+  <meta
+  name="publisher"
+  content="ABC Nursery"
+/>
 
   <!-- Social Sharing Fallback -->
 
@@ -95,7 +99,7 @@
 
   <!-- Schema.org -->
 
-  <script type="application/ld+json">
+  <!-- <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Preschool",
@@ -109,7 +113,26 @@
       "addressCountry": "AE"
     }
   }
-  </script>
+  </script> -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Preschool",
+  "name": "ABC Nursery",
+  "url": "https://www.abc-nursery.ae",
+  "logo": "https://www.abc-nursery.ae/favicon.png",
+  "telephone": "+97126429652",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ABC Nursery"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Abu Dhabi",
+    "addressCountry": "AE"
+  }
+}
+</script>
 
   <!-- Google Tag Manager -->
 
