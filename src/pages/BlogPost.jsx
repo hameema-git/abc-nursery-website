@@ -145,10 +145,15 @@ function BlogPost() {
           content={blog.excerpt}
         />
 
-        <meta
+        {/* <meta
           name="twitter:image"
           content={blog.image}
-        />
+        /> */}
+
+        <meta
+  name="twitter:image"
+  content={`https://www.abc-nursery.ae${blog.image}`}
+/>
 
           {/* Blog Structured Data */}
 
