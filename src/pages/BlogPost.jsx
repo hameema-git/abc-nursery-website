@@ -70,10 +70,17 @@ function BlogPost() {
           content={blog.excerpt}
         />
 
-        <meta
+        {/* <meta
           name="keywords"
           content={blog.keywords}
-        />
+        /> */}
+
+        {blog.keywords && (
+  <meta
+    name="keywords"
+    content={blog.keywords}
+  />
+)}
 
         {/* Canonical URL */}
 
@@ -103,13 +110,18 @@ function BlogPost() {
 
         <meta
           property="og:url"
-          content={`www.abc-nursery.ae/blog/${blog.slug}`}
+          content={`https://www.abc-nursery.ae/blog/${blog.slug}`}
         />
-
+{/* 
         <meta
           property="og:image"
           content={blog.image}
-        />
+        /> */}
+
+        <meta
+  property="og:image"
+  content={`https://www.abc-nursery.ae${blog.image}`}
+/>
 
         <meta
           property="article:published_time"
@@ -137,6 +149,34 @@ function BlogPost() {
           name="twitter:image"
           content={blog.image}
         />
+
+          {/* Blog Structured Data */}
+
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: blog.title,
+      description: blog.excerpt,
+      image: `https://www.abc-nursery.ae${blog.image}`,
+      author: {
+        "@type": "Organization",
+        name: "ABC Nursery"
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "ABC Nursery",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://www.abc-nursery.ae/favicon.png"
+        }
+      },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": `https://www.abc-nursery.ae/blog/${blog.slug}`
+      }
+    })}
+  </script>
 
       </Helmet>
 

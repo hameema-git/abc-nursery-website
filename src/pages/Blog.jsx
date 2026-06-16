@@ -22,7 +22,7 @@ function Blog() {
 
         <link
           rel="canonical"
-          href="https://www.abc-nursery.ae/"
+          href="https://www.abc-nursery.ae/blog"
         />
 
         {/* Open Graph SEO */}
@@ -44,20 +44,30 @@ function Blog() {
 
         <meta
           property="og:url"
-          content="https://www.abc-nursery.ae/"
+          content="https://www.abc-nursery.ae/blog"
         />
-
+{/* 
         <meta
           property="og:image"
           content="https://abc-nursery.ae/favicon.png"
-        />
+        /> */}
 
+
+<meta
+  property="og:image"
+  content="https://www.abc-nursery.ae/og-image.jpg"
+/>
         {/* Twitter SEO */}
 
         <meta
           name="twitter:card"
           content="summary_large_image"
         />
+
+        <meta
+  name="twitter:image"
+  content="https://www.abc-nursery.ae/og-image.jpg"
+/>
 
       </Helmet>
 

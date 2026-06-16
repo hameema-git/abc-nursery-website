@@ -22,17 +22,17 @@ function Home() {
       <Helmet>
 
         <title>
-          ABC Nursery Abu Dhabi | Preschool, Daycare & Early Learning Since 1979
+          Nursery Admission Abu Dhabi | Apply for Enrollment Now 
         </title>
 
         <meta
           name="description"
-          content="ABC Nursery Abu Dhabi offers preschool, daycare, kindergarten preparation and early childhood education programs. Trusted by families since 1979."
+          content="Looking for nursery admission in Abu Dhabi? ABC Nursery is now enrolling for 2026-2027 with a British EYFS curriculum. Book a tour or apply online today "
         />
 
         <meta
           name="keywords"
-          content="ABC Nursery Abu Dhabi, Preschool Abu Dhabi, Nursery Abu Dhabi, Daycare Abu Dhabi, Early Learning UAE, Childcare Abu Dhabi"
+          content="Nursery admission Abu Dhabi"
         />
 
         <link
