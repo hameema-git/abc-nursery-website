@@ -19,7 +19,7 @@ function Leadership() {
 
                     {/* LEADER 1 */}
 
-                    <div className="leader-card">
+                    {/* <div className="leader-card">
 
                         <img
                             src={leader2}
@@ -30,7 +30,7 @@ function Leadership() {
 
                         <p>Nursery Manager</p>
 
-                    </div>
+                    </div> */}
 
                     {/* LEADER 2 */}
 
