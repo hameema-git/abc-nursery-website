@@ -65,10 +65,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Routes>
 
           {/* Homepage */}
-          {/* <Route
+          <Route
             path="/"
             element={<Home />}
-          /> */}
+          />
 
           <Route
     path="/home"
