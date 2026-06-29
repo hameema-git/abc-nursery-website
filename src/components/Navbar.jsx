@@ -124,7 +124,7 @@ function Navbar() {
                 >
 
                     <a
-                        href="#home"
+                        href="/home"
                         onClick={() => setShowMenu(false)}
                     >
                         Home
@@ -165,14 +165,14 @@ function Navbar() {
                     </a> */}
 
                     <a
-                        href="#gallery"
+                        href="/gallery"
                         onClick={() => setShowMenu(false)}
                     >
                         Gallery
                     </a>
 
                     <a
-                        href="#contact"
+                        href="/contact"
                         onClick={() => setShowMenu(false)}
                     >
                         Contact

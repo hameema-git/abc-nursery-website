@@ -54,6 +54,9 @@ import ChildDevelopmentMilestonesPage from "./pages/ChildDevelopmentMilestonesPa
 import NutritionProgramPage from "./pages/NutritionProgramPage";
 import SafetySecurityPage from "./pages/SafetySecurityPage";
 import SchoolPreparationPage from "./pages/SchoolPreparationPage";
+import GalleryPage from "./pages/GalleryPage";
+import ContactPage from "./pages/ContactPage";
+import HomePage from "./pages/HomePage";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -62,10 +65,15 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Routes>
 
           {/* Homepage */}
-          <Route
+          {/* <Route
             path="/"
             element={<Home />}
-          />
+          /> */}
+
+          <Route
+    path="/home"
+    element={<HomePage />}
+/>
 
           {/* Blog Listing */}
           <Route
@@ -85,6 +93,15 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 <Route
   path="/programs"
   element={<ProgramsPage />}
+/>
+
+<Route
+    path="/contact"
+    element={<ContactPage />}
+/>
+<Route
+    path="/gallery"
+    element={<GalleryPage />}
 />
 
 <Route

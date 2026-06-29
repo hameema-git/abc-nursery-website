@@ -18,6 +18,15 @@
     <loc>https://www.abc-nursery.ae/programs</loc>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://www.abc-nursery.ae/gallery</loc>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://www.abc-nursery.ae/contact</loc>
+    <priority>0.9</priority>
+</url>
 
   <url>
     <loc>https://www.abc-nursery.ae/why-choose-us</loc>
