@@ -1,0 +1,11 @@
+.seo-page {
+    padding: 120px 20px 80px;
+    max-width: 1100px;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+}
+
+.seo-page h1 { ... }
+.seo-page h2 { ... }
+.seo-page p { ... }
+.seo-page ul { ... }

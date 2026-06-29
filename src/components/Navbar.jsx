@@ -130,19 +130,39 @@ function Navbar() {
                         Home
                     </a>
 
-                    <a
+                    {/* <a
                         href="#about"
+                        onClick={() => setShowMenu(false)}
+                    >
+                        About
+                    </a> */}
+
+                       <a
+                        href="/about"
                         onClick={() => setShowMenu(false)}
                     >
                         About
                     </a>
 
+
                     <a
-                        href="#programs"
+                        href="/programs"
                         onClick={() => setShowMenu(false)}
                     >
                         Programs
                     </a>
+                        <a
+                        href="/why-choose-us"
+                        onClick={() => setShowMenu(false)}
+                    >
+                        Why Choose Us
+                    </a>
+                         {/* <a
+                        href="/EyfsCurriculumPage"
+                        onClick={() => setShowMenu(false)}
+                    >
+                        EyfsCurriculamPage
+                    </a> */}
 
                     <a
                         href="#gallery"

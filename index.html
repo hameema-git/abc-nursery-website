@@ -7,158 +7,310 @@
 
   <link rel="icon" type="image/png" href="/favicon.png" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══════════════════════════════════════
+       GENERIC SEO
+  ═══════════════════════════════════════ -->
+
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="ABC Nursery" />
+  <meta name="publisher" content="ABC Nursery" />
+
+  <!-- Title & Description are set per-page via react-helmet-async.
+       The values below are the SITE-WIDE fallbacks only. -->
+  <title>ABC Nursery Abu Dhabi | Established 1979 | Early Childhood Education</title>
   <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
+    name="description"
+    content="ABC Nursery has been nurturing young minds in Abu Dhabi since 1979. Offering high-quality early childhood education for children aged 1–6 in a safe, caring environment."
+  />
+  <meta
+    name="keywords"
+    content="nursery Abu Dhabi, preschool Abu Dhabi, early childhood education UAE, daycare Abu Dhabi, ABC Nursery"
   />
 
-  <!-- Generic SEO -->
+  <!-- ═══════════════════════════════════════
+       CANONICAL
+  ═══════════════════════════════════════ -->
+  <link rel="canonical" href="https://www.abc-nursery.ae/" />
 
-  <meta
-    name="robots"
-    content="index, follow"
-  />
+  <!-- ═══════════════════════════════════════
+       OPEN GRAPH
+  ═══════════════════════════════════════ -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:site_name"   content="ABC Nursery" />
+  <meta property="og:url"         content="https://www.abc-nursery.ae/" />
+  <meta property="og:title"       content="ABC Nursery Abu Dhabi | Established 1979" />
+  <meta property="og:description" content="Nurturing young minds in Abu Dhabi since 1979. Early childhood education for children aged 1–6." />
+  <meta property="og:image"       content="https://www.abc-nursery.ae/og-image.jpg" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt"   content="ABC Nursery Abu Dhabi" />
+  <meta property="og:locale"      content="en_AE" />
 
-  <meta
-    name="author"
-    content="ABC Nursery"
-  />
-  <meta
-  name="publisher"
-  content="ABC Nursery"
-/>
+  <!-- ═══════════════════════════════════════
+       TWITTER CARD
+  ═══════════════════════════════════════ -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="ABC Nursery Abu Dhabi | Established 1979" />
+  <meta name="twitter:description" content="Nurturing young minds in Abu Dhabi since 1979. Early childhood education for children aged 1–6." />
+  <meta name="twitter:image"       content="https://www.abc-nursery.ae/og-image.jpg" />
+  <meta name="twitter:image:alt"   content="ABC Nursery Abu Dhabi" />
 
-  <!-- Social Sharing Fallback -->
+  <!-- ═══════════════════════════════════════
+       LOCAL / GEO SEO
+  ═══════════════════════════════════════ -->
+  <meta name="geo.region"    content="AE-AZ" />
+  <meta name="geo.placename" content="Abu Dhabi" />
+  <meta name="geo.position"  content="24.4539;54.3773" />
+  <meta name="ICBM"          content="24.4539,54.3773" />
 
- 
-
-
-  <meta
-  property="og:image"
-  content="https://www.abc-nursery.ae/og-image.jpg"
-/>
-
-<meta
-  property="og:image:width"
-  content="1200"
-/>
-
-<meta
-  property="og:image:height"
-  content="630"
-/>
-
-<meta
-  name="twitter:card"
-  content="summary_large_image"
-/>
-
-<meta
-  name="twitter:image"
-  content="https://www.abc-nursery.ae/og-image.jpg"
-/>
-  <!-- Local SEO -->
-
-  <meta
-    name="geo.region"
-    content="AE-AZ"
-  />
-
-  <meta
-    name="geo.placename"
-    content="Abu Dhabi"
-  />
-
-  <meta
-    name="geo.position"
-    content="24.4539;54.3773"
-  />
-
-  <meta
-    name="ICBM"
-    content="24.4539,54.3773"
-  />
-
-  <!-- Google Fonts -->
-
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  />
-
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  />
-
+  <!-- ═══════════════════════════════════════
+       GOOGLE FONTS
+  ═══════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet"
   />
 
-  <!-- Schema.org -->
+  <!-- ═══════════════════════════════════════════════════════════
+       SCHEMA.ORG STRUCTURED DATA
+       ─────────────────────────────────────────────────────────
+       1. Preschool  (LocalBusiness sub-type — highest priority)
+       2. Organization
+       3. WebSite
+       4. WebPage  (home page)
+       5. Service  (early childhood education)
+       6. FAQPage  (update Q&A to match your real FAQ content)
+       7. BreadcrumbList (home)
+  ═══════════════════════════════════════════════════════════════ -->
 
-  <!-- <script type="application/ld+json">
+  <!-- 1. Preschool / LocalBusiness -->
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Preschool",
+    "@type": ["Preschool", "LocalBusiness"],
+    "@id": "https://www.abc-nursery.ae/#preschool",
     "name": "ABC Nursery",
+    "alternateName": "ABC Nursery Abu Dhabi",
+    "description": "ABC Nursery has been nurturing young minds in Abu Dhabi since 1979, providing high-quality early childhood education for children aged 1 to 6 years.",
+    "foundingDate": "1979",
     "url": "https://www.abc-nursery.ae",
-    "logo": "https://www.abc-nursery.ae/favicon.png",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.abc-nursery.ae/favicon.png",
+      "width": 512,
+      "height": 512
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://www.abc-nursery.ae/og-image.jpg",
+      "width": 1200,
+      "height": 630
+    },
     "telephone": "+97126429652",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Abu Dhabi",
+      "addressRegion": "Abu Dhabi",
       "addressCountry": "AE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 24.4539,
+      "longitude": 54.3773
+    },
+    "hasMap": "https://maps.google.com/?q=24.4539,54.3773",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday"],
+        "opens": "07:30",
+        "closes": "14:30"
+      }
+    ],
+    "priceRange": "$$",
+    "currenciesAccepted": "AED",
+    "paymentAccepted": "Cash, Bank Transfer",
+    "sameAs": [
+      "https://www.facebook.com/share/1BJHvJvbox/",
+      "https://www.instagram.com/abc_nursery.abudhabi"
+    ]
+  }
+  </script>
+
+  <!-- 2. Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.abc-nursery.ae/#organization",
+    "name": "ABC Nursery",
+    "url": "https://www.abc-nursery.ae/",
+    "logo": "https://www.abc-nursery.ae/favicon.png",
+    "image": "https://www.abc-nursery.ae/og-image.jpg",
+    "telephone": "+97126429652",
+    "foundingDate": "1979",
+    "inLanguage": "en-AE",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+97126429652",
+      "contactType": "customer service",
+      "areaServed": "AE",
+      "availableLanguage": ["English", "Arabic"]
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Abu Dhabi",
+      "addressCountry": "AE"
+    },
+    "sameAs":[
+   "https://www.facebook.com/share/1BJHvJvbox/",
+   "https://www.instagram.com/abc_nursery.abudhabi"
+]
+  }
+  </script>
+
+  <!-- 3. WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://www.abc-nursery.ae/#website",
+    "name": "ABC Nursery",
+    "url": "https://www.abc-nursery.ae/",
+    "publisher": {
+      "@id": "https://www.abc-nursery.ae/#organization"
     }
   }
-  </script> -->
+  </script>
+
+  <!-- 4. WebPage (home) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.abc-nursery.ae/#webpage",
+    "url": "https://www.abc-nursery.ae/",
+    "name": "ABC Nursery Abu Dhabi | Established 1979 | Early Childhood Education",
+    "description": "ABC Nursery has been nurturing young minds in Abu Dhabi since 1979. Offering high-quality early childhood education for children aged 1–6.",
+    "isPartOf": { "@id": "https://www.abc-nursery.ae/#website" },
+    "about": { "@id": "https://www.abc-nursery.ae/#organization" },
+    "breadcrumb": { "@id": "https://www.abc-nursery.ae/#breadcrumb" },
+    "inLanguage": "en-AE",
+    "datePublished": "1979-01-01",
+    "dateModified": "2026-06-29"
+  }
+  </script>
+
+  <!-- 5. Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Early Childhood Education",
+    "description": "High-quality nursery and preschool education for children aged 1 to 6 years in Abu Dhabi, following a structured curriculum in a safe and nurturing environment.",
+    "provider": {
+      "@id": "https://www.abc-nursery.ae/#organization"
+    },
+    "serviceType": "EYFS Nursery and Preschool Education",
+    "areaServed": {
+      "@type": "City",
+      "name": "Abu Dhabi",
+      "addressCountry": "AE"
+    },
+    "audience": {
+      "@type": "PeopleAudience",
+      "suggestedMinAge": 1,
+      "suggestedMaxAge": 6
+    }
+  }
+  </script>
+
+  <!-- 6. FAQPage — update these Q&As to match your real FAQ section -->
   <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Preschool",
-  "name": "ABC Nursery",
-  "url": "https://www.abc-nursery.ae",
-  "logo": "https://www.abc-nursery.ae/favicon.png",
-  "image": "https://www.abc-nursery.ae/og-image.jpg",
-  "telephone": "+97126429652",
-  "publisher": {
-    "@type": "Organization",
-    "name": "ABC Nursery",
-    "url": "https://www.abc-nursery.ae"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Abu Dhabi",
-    "addressCountry": "AE"
-  }
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"What age groups do you accept?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"We offer programs for infants, toddlers, and preschool children."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"What are your working hours?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"We are open Monday to Friday, from 7:00 AM to 5:00 PM."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Is the environment safe for children?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes, we provide a safe and child-friendly environment with trained staff and safety measures."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Can I visit the nursery before enrolling?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes, parents are welcome to visit the nursery before enrollment."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Do you provide transportation services?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes, transportation services are available in selected areas."
+      }
+    }
+  ]
 }
-</script>
+  </script>
 
-  <!-- Google Tag Manager -->
+  <!-- 7. BreadcrumbList (home) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://www.abc-nursery.ae/#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.abc-nursery.ae/"
+      }
+    ]
+  }
+  </script>
 
+  <!-- ═══════════════════════════════════════
+       GOOGLE TAG MANAGER
+  ═══════════════════════════════════════ -->
   <script>
   (function(w,d,s,l,i){
     w[l]=w[l]||[];
-    w[l].push({
-      'gtm.start': new Date().getTime(),
-      event:'gtm.js'
-    });
-
+    w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
     var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),
         dl=l!='dataLayer'?'&l='+l:'';
-
     j.async=true;
-    j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;
-
+    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
     f.parentNode.insertBefore(j,f);
-
   })(window,document,'script','dataLayer','GTM-KPRKXMFG');
   </script>
-
   <!-- End Google Tag Manager -->
 
 </head>
@@ -166,24 +318,18 @@
 <body>
 
   <!-- Google Tag Manager (noscript) -->
-
   <noscript>
     <iframe
       src="https://www.googletagmanager.com/ns.html?id=GTM-KPRKXMFG"
-      height="0"
-      width="0"
+      height="0" width="0"
       style="display:none;visibility:hidden">
     </iframe>
   </noscript>
-
   <!-- End Google Tag Manager (noscript) -->
 
   <div id="root"></div>
 
-  <script
-    type="module"
-    src="/src/main.jsx">
-  </script>
+  <script type="module" src="/src/main.jsx"></script>
 
 </body>
 

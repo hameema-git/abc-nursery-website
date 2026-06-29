@@ -39,6 +39,21 @@ import {
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import AboutPage from "./pages/AboutPage";
+import ProgramsPage from "./pages/ProgramsPage";
+import WhyChoosePage from "./pages/WhyChoosePage";
+import EyfsCurriculumPage from "./pages/EyfsCurriculumPage";
+import AdmissionsGuidePage from "./pages/AdmissionsGuidePage";
+import NurseryFeesPage from "./pages/NurseryFeesPage";
+import InfantCarePage from "./pages/InfantCarePage";
+import ToddlerDevelopmentPage from "./pages/ToddlerDevelopmentPage";
+import PreschoolReadinessPage from "./pages/PreschoolReadinessPage";
+import LearningThroughPlayPage from "./pages/LearningThroughPlayPage";
+import ParentResourcesPage from "./pages/ParentResourcesPage";
+import ChildDevelopmentMilestonesPage from "./pages/ChildDevelopmentMilestonesPage";
+import NutritionProgramPage from "./pages/NutritionProgramPage";
+import SafetySecurityPage from "./pages/SafetySecurityPage";
+import SchoolPreparationPage from "./pages/SchoolPreparationPage";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -63,7 +78,72 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             path="/blog/:slug"
             element={<BlogPost />}
           />
+          <Route
+  path="/about"
+  element={<AboutPage />}
+/>
+<Route
+  path="/programs"
+  element={<ProgramsPage />}
+/>
 
+<Route
+    path="/why-choose-us"
+    element={<WhyChoosePage />}
+/>
+<Route
+    path="/eyfs-curriculum"
+    element={<EyfsCurriculumPage />}
+/>
+
+<Route
+    path="/admissions-guide"
+    element={<AdmissionsGuidePage />}
+/>
+<Route
+    path="/nursery-fees"
+    element={<NurseryFeesPage />}
+/>
+<Route
+    path="/infant-care"
+    element={<InfantCarePage />}
+/>
+<Route
+    path="/toddler-development"
+    element={<ToddlerDevelopmentPage />}
+/>
+
+<Route
+    path="/preschool-readiness"
+    element={<PreschoolReadinessPage />}
+/>
+<Route
+    path="/learning-through-play"
+    element={<LearningThroughPlayPage />}
+/>
+
+<Route
+    path="/parent-resources"
+    element={<ParentResourcesPage />}
+/>
+<Route
+    path="/child-development-milestones"
+    element={<ChildDevelopmentMilestonesPage />}
+/>
+<Route
+    path="/nutrition-program"
+    element={<NutritionProgramPage />}
+/>
+
+<Route
+    path="/safety-security"
+    element={<SafetySecurityPage />}
+/>
+
+<Route
+    path="/school-preparation"
+    element={<SchoolPreparationPage />}
+/>
         </Routes>
       </BrowserRouter>
     </HelmetProvider>
