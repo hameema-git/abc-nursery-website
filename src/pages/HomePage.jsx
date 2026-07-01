@@ -20,18 +20,21 @@ function HomePage() {
     <>
       <Helmet>
 
-        <title>
+        {/* <title>
           ABC Nursery Abu Dhabi | British EYFS Nursery Since 1979
-        </title>
+        </title> */}
+        <title>
+Nursery Admission Abu Dhabi | Apply for Enrollment Now
+</title>
 
         <meta
           name="description"
-          content="ABC Nursery has provided British EYFS early childhood education in Abu Dhabi since 1979, offering nursery and preschool programs for infants, toddlers, and preschool children in a safe, play-based learning environment."
+          content= "Looking for nursery admission in Abu Dhabi? ABC Nursery is now enrolling for 2026–2027 with a British EYFS curriculum. Book a tour or apply online today."
         />
 
-        <meta
+  <meta
           name="keywords"
-          content="ABC Nursery Abu Dhabi, British Nursery Abu Dhabi, Preschool Abu Dhabi, EYFS Nursery UAE"
+          content="Nursery admission Abu Dhabi"
         />
 
         <link

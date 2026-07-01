@@ -21,10 +21,13 @@ function Home() {
 
       <Helmet>
 
-        <title>
+        {/* <title>
           Nursery Admission Abu Dhabi | Apply for Enrollment Now 
-        </title>
+        </title> */}
 
+<title>
+Nursery Admission Abu Dhabi | Apply for Enrollment Now
+</title>
         <meta
           name="description"
           content="Looking for nursery admission in Abu Dhabi? ABC Nursery is now enrolling for 2026-2027 with a British EYFS curriculum. Book a tour or apply online today "
