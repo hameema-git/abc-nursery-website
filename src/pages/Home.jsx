@@ -6,7 +6,7 @@ import About from "../components/About";
 import Programs from "../components/Programs";
 import WhyChoose from "../components/WhyChoose";
 import Contact from "../components/Contact";
-import Leadership from "../components/Leadership";
+// import Leadership from "../components/Leadership";
 import ParentReview from "../components/ParentReviews";
 import FAQ from "../components/FAQ";
 import Gallery from "../components/Gallery";
@@ -77,7 +77,7 @@ Nursery Admission Abu Dhabi | Apply for Enrollment Now
 
       <Contact />
 
-      <Leadership />
+      {/* <Leadership /> */}
 
       <ParentReview />
 
